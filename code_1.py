@@ -1,0 +1,22 @@
+# Name: Natalia Ramirez
+# CIS 3330
+# CODE 1 - Weather Assistant
+# Conversion formula: (Temperature in °F - 32) * .5556
+# Note that the message to user should be the following
+# "What is the temperature outside: "
+def main():
+    user_var = int(input("What is the temperature outside: "))
+    celsius = (user_var - 32) * .5556
+    if celsius > 20:
+        clothing = "Hat"
+    elif celsius > 10:
+        clothing = "Light Jacket"
+    else:
+        clothing = "Heavy Jacket"
+    print(f"Temperature in Celsius: {celsius:.2f}°C")
+    print(f"Recommended clothing: {clothing}")
+
+
+
+if __name__ == "__main__":
+    main()
